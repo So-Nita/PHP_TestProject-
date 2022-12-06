@@ -59,11 +59,11 @@ class parentModel{
     }
     function read($tabel,$table_1 = null,$tabel_2 = null){
         $sql = "SELECT * FROM ". $tabel;
-        if($tabel_1 != ""){
-            $sql .= "JOIN ".$tabel_1." ON ".$tabel.".pro_id = ".$tabel_1.".pro_id";
+        if($table_1 != ""){
+            $sql .= " JOIN ".$table_1." ON ".$tabel.".pro_id = ".$table_1.".pro_id";
         }
         if($tabel_2 != ""){
-            $sql .= "JOIN ".$tabel_2." ON ".$tabel.".pro_id = ".$tabel_2.".pro_id";
+            $sql .= " JOIN ".$tabel_2." ON ".$tabel.".pro_id = ".$tabel_2.".pro_id";
         }
         // $paginate = "SELECT count(*) FROM ". self::$table;
 

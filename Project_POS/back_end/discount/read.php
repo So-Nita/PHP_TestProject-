@@ -10,7 +10,7 @@ $db = $database->getConnection();
  
 $items = new parentModel($db);
 
-$result = $items->read('product','dicount');
+$result = $items->read('product','discount');
 
 if($result->num_rows > 0){    
     $itemRecords=array();
@@ -19,7 +19,7 @@ if($result->num_rows > 0){
         extract($item); 
         
         $itemDetails=array(
-            'id' => $tax_id,
+            'id' => $dis_id,
             'name' => $name,
             'discount' => $discount,
             "dis_amount" => number_format(($discount/100)*$price, 2, '.', ','), 

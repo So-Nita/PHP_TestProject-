@@ -3,8 +3,8 @@ class Database{
 	
 	private $host  = 'localhost';
     private $user  = 'root';
-    private $password   = "";
-    private $database  = "pos_sold"; 
+    private $password   = "12345";
+    private $database  = "pos"; 
     
     public function getConnection(){		
 		$conn = new mysqli($this->host, $this->user, $this->password, $this->database);
