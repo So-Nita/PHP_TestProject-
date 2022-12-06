@@ -12,7 +12,6 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
     <title>Hello, world!</title>
   </head>
   <body>
@@ -33,15 +32,7 @@
                 >XXXXXXXXXXXXX</a
               >
             </div>
-            <button
-              type="button"
-              class="navbar-toggler border-0 order-1"
-              data-toggle="collapse"
-              data-target="#nav"
-              aria-controls="nav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+            <button type="button" class="navbar-toggler border-0 order-1"data-toggle="collapse" data-target="#nav"aria-controls="nav"aria-expanded="false"aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -70,36 +61,19 @@
           </nav>
         </aside>
         <main class="col px-0 flex-grow-1">
-          <div
-            class="btn btn-secondary float-end me-5 mt-5"
-            type="button"
-            class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
+          <div class="btn btn-secondary float-end me-5 mt-5" type="button" class="btn btn-primary"data-bs-toggle="modal"
+            data-bs-target="#insert"
           >
             Insert
           </div>
 
           <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModal"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
+          <div class="modal fade" id="insert" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">
-                    Insert Tax Product
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
+                  <h5 class="modal-title" id="exampleModalLabel">Insert Tax Product</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                   <form action="">
@@ -170,6 +144,7 @@
                     Save changes
                   </button>
                 </div>
+                <!--  -->
               </div>
             </div>
           </div>
@@ -179,18 +154,16 @@
               <thead>
                 <th>Tax_id</th>
                 <th>Product_name</th>
-                <th>Amount</th>
+                <th>Tax mount</th>
                 <th>Start_date</th>
                 <th>End_date</th>
+                <th>Action</th>
               </thead>
-              <tbody>
-                <th>1</th>
-                <th>string</th>
-                <th>12</th>
-                <th>2012-12-12</th>
-                <th>2012-12-12</th>
+              <tbody id="tax">
+              
               </tbody>
             </table>
+          
           </div>
         </main>
       </div>
@@ -201,5 +174,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="../fecth/product.js"></script>
   </body>
 </html>
